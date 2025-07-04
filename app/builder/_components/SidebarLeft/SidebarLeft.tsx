@@ -3,7 +3,7 @@ import React from "react";
 import { PagesSection } from "./PagesSection";
 import { LayersSection } from "./LayersSection";
 import { useSidebarStore } from "@/store/useSidebarStore";
-import ComponentsSection from "./ComponentsSection";
+import { ComponentsSection } from "./ComponentsSection";
 
 export default function SidebarLeft() {
   const showComponentPanel = useSidebarStore((s) => s.showComponentPanel);

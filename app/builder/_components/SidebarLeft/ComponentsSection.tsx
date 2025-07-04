@@ -1,7 +1,7 @@
 import { useSidebarStore } from '@/store/useSidebarStore';
 import React from 'react'
 
-function ComponentsSection() {
+export function ComponentsSection() {
     const showComponentPanel = useSidebarStore((s) => s.showComponentPanel);
     return (
         <div className="absolute inset-0 z-10 bg-white dark:bg-zinc-900 p-4 overflow-auto flex flex-col">
@@ -24,5 +24,4 @@ function ComponentsSection() {
     )
 }
 
-export default ComponentsSection
 
